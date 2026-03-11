@@ -3,7 +3,9 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
+#include <utility>
 using namespace std;
 
 void quickSort(vector<int> &);
-void merge_sort(vector<int> &);
+void mergeSort(vector<int> &);
+void bubbleSort(vector<int> &);

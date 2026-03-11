@@ -14,7 +14,7 @@ static void merge(vector<int> &arr, vector<int> &left , vector<int> &right){
         arr[k++] = right[j++];
 }
 
-void merge_sort(vector<int> &arr){
+void mergeSort(vector<int> &arr){
     if(arr.size() <= 1)
         return;
     
@@ -27,7 +27,7 @@ void merge_sort(vector<int> &arr){
     for(int i = arr.size() / 2 ; i < arr.size() ; ++i)
         right[k++] = arr[i];
 
-    merge_sort(left);
-    merge_sort(right);
+    mergeSort(left);
+    mergeSort(right);
     merge(arr,left,right);
 }
