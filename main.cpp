@@ -32,7 +32,7 @@ int main() {
         cout << merge_vector[i] << " ";
     cout << "\n\nMerge Sort finished successfully!\n---------------------------------------------------------------------------------------------------\n";
 
-    //bubble Sort Part
+    //Bubble Sort Part
     vector<int> bubble_vector(10);
     cout << "Generating random numbers for Bubble Sort: ";
     for(int i = 0; i < bubble_vector.size(); i++){
@@ -46,6 +46,21 @@ int main() {
     for(int i = 0; i < bubble_vector.size(); i++)
         cout << bubble_vector[i] << " ";
     cout << "\n\nBubble Sort finished successfully!\n----------------------------------------------------------------------------------------------------\n";
+
+    //Counting Sort Part
+    vector<size_t> counting_vector(10);
+    cout << "Generating random numbers for Counting Sort: ";
+    for(int i = 0; i < counting_vector.size(); i++){
+        counting_vector[i] = rand() % 16;
+        cout << counting_vector[i] << " ";
+    }
+    cout << "\n\nRunning counting sort...\n";
+    cout << "Time: O(n + k)\n";
+    countingSort(counting_vector);
+    cout << "\nSorted numbers: ";
+    for(int i = 0; i < counting_vector.size(); i++)
+        cout << counting_vector[i] << " ";
+    cout << "\n\nCounting Sort finished successfully!\n----------------------------------------------------------------------------------------------------\n";
 
 
     return 0;
