@@ -10,7 +10,6 @@ static size_t max_val(const vector <size_t> &arr, const size_t &arr_size){
 
 void countingSort(vector<size_t> &arr){
     size_t arr_size = arr.size();
-
     if(arr_size <= 1)
         return;
 

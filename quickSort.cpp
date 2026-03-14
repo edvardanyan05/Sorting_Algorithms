@@ -1,7 +1,6 @@
 #include "sorting_algorithms.hpp"
 
 void quickSort(vector<int> &arr){
-
     size_t arr_size = arr.size();
     if (!arr_size || arr_size == 1)
         return;
@@ -23,12 +22,14 @@ void quickSort(vector<int> &arr){
     quickSort(less);
     quickSort(more);
 
+    size_t less_size = less.size();
+    size_t equal_size = equal.size();
+    size_t more_size = more.size();
     size_t arr_index = 0;
-    for(size_t i = 0; i < less.size(); i++)
+    for(size_t i = 0; i < less_size; i++)
         arr[arr_index++] = less[i];
-    for(size_t i = 0; i < equal.size(); i++)
+    for(size_t i = 0; i < equal_size; i++)
         arr[arr_index++] = equal[i];
-    for(size_t i = 0; i < more.size(); i++)
+    for(size_t i = 0; i < more_size; i++)
         arr[arr_index++] = more[i];
-
 }

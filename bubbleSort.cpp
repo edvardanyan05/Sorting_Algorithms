@@ -2,7 +2,6 @@
 
 void bubbleSort(vector<int> &arr){
     size_t arr_size = arr.size();
-
     if(arr_size <= 1)
         return;
 
