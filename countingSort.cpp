@@ -14,7 +14,7 @@ void countingSort(vector<size_t> &arr){
         return;
 
     size_t maxVal = max_val(arr, arr_size);
-    vector<size_t> counter(maxVal + 1);
+    vector<size_t> counter(maxVal + 1, 0);
 
     for(size_t i = 0; i < arr_size; i++)
         counter[arr[i]]++;

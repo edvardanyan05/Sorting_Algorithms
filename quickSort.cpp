@@ -26,6 +26,7 @@ void quickSort(vector<int> &arr){
     size_t equal_size = equal.size();
     size_t more_size = more.size();
     size_t arr_index = 0;
+    
     for(size_t i = 0; i < less_size; i++)
         arr[arr_index++] = less[i];
     for(size_t i = 0; i < equal_size; i++)

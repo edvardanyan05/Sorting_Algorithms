@@ -10,7 +10,8 @@ int main() {
         cout << quick_vector[i] << " ";
     }
     cout << "\n\nRunning quick sort...\n";
-    cout << "Time: O(nlogn)\n";
+    cout << "Time (Average Case): O(nlogn)\n";
+    cout << "Time (Worst   Case): O(n^2)\n";
     quickSort(quick_vector);
     cout << "\nSorted numbers: ";
     for(int i = 0; i < quick_vector.size(); i++)
@@ -47,6 +48,22 @@ int main() {
         cout << bubble_vector[i] << " ";
     cout << "\n\nBubble Sort finished successfully!\n----------------------------------------------------------------------------------------------------\n";
 
+    //Insertion Sort Part
+    vector<int> insertion_vector(10);
+    cout << "Generating random numbers for Insertion Sort: ";
+    for(int i = 0; i < insertion_vector.size(); i++){
+        insertion_vector[i] = rand() % 100;
+        cout << insertion_vector[i] << " ";
+    }
+    cout << "\n\nRunning insertion sort...\n";
+    cout << "Time (Best Case): O(n)\n";
+    cout << "Time (Worst & Average Case): O(n^2)\n";
+    insertionSort(insertion_vector);
+    cout << "\nSorted numbers: ";
+    for(int i = 0; i < insertion_vector.size(); i++)
+        cout << insertion_vector[i] << " ";
+    cout << "\n\nInsertion Sort finished successfully!\n----------------------------------------------------------------------------------------------------\n";
+
     //Counting Sort Part
     vector<size_t> counting_vector(10);
     cout << "Generating random numbers for Counting Sort: ";
@@ -55,7 +72,7 @@ int main() {
         cout << counting_vector[i] << " ";
     }
     cout << "\n\nRunning counting sort...\n";
-    cout << "Time: O(n + k)\n";
+    cout << "Time: O(n+k)\n";
     countingSort(counting_vector);
     cout << "\nSorted numbers: ";
     for(int i = 0; i < counting_vector.size(); i++)

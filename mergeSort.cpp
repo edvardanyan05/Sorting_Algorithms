@@ -24,7 +24,6 @@ void mergeSort(vector<int> &arr){
     vector<int> left(arr_size / 2);
     for(int i = 0 ; i < arr_size / 2 ; ++i)   
         left[i] = arr[i];
-        
     vector<int> right(arr_size - arr_size / 2);
     int k = 0;
     for(int i = arr_size / 2 ; i < arr_size ; ++i)

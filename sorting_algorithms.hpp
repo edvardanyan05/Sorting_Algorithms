@@ -9,4 +9,5 @@ using namespace std;
 void quickSort(vector<int> &);
 void mergeSort(vector<int> &);
 void bubbleSort(vector<int> &);
+void insertionSort(vector<int> &);
 void countingSort(vector<size_t> &);
